@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<title>calculator</title>
+</head>
+<body>
+<div>
+<section>
+<h3 style="text-align:center"><b style="text-align:center">JAVASCRIPT CALCULATOR</b></h3>
+<table style="margin-left:50%">
+<tr>
+<td colspan="4"><input type="text"  id="a" name="calculatorscreen" value="" style="width:284px;height:140px;font-size:35px" ></td>
+</tr>
+
+</section>
+<section id="b">
+
+<tr>
+
+<td><input type="button" name="bt1" id="1" onclick="a.value=0" value="AC" style="width:70px;height:70px"></td>
+<td><input type="button" name="bt2" id="2" onclick="operator('+')" value="+" style="width:70px;height:70px"></td>
+<td><input type="button" name="bt3" id="3" onclick="a.value=a.value/100" value="%" style="width:70px;height:70px"></td>
+<td><input type="button" name="bt4" id="4" onclick="operator('/')" value="/" style="width:70px;height:70px"></td>
+</tr><br>
+<tr>
+<td><input type="button" name="bt5" id="5" onclick="zeroToNine(7)" value="7" style="width:70px;height:70px"></td>
+<td><input type="button" name="bt6" id="6" onclick="zeroToNine(8)" value="8" style="width:70px;height:70px"></td>
+<td><input type="button" name="bt7" id="7" onclick="zeroToNine(9)" value="9" style="width:70px;height:70px"></td>
+<td><input type="button" name="bt8" id="8" onclick="operator('*')" value="*" style="width:70px;height:70px" onclick=""></td>
+</tr><br>
+<tr>
+<td><input type="button" name="bt9" id="9" onclick="zeroToNine(4)" value="4" style="width:70px;height:70px"></td>
+<td><input type="button" name="bt10" id="10" onclick="zeroToNine(5)" value="5" style="width:70px;height:70px"></td>
+<td><input type="button" name="bt11" id="11" onclick="zeroToNine(6)" value="6" style="width:70px;height:70px"></td>
+<td><input type="button" name="bt12" id="12" onclick="operator('-')" value="-" style="width:70px;height:70px"></td>
+</tr><br>
+<tr>
+<td><input type="button" name="bt5" id="13" onclick="zeroToNine('1')" value="1" style="width:70px;height:70px"></td>
+<td><input type="button" name="bt6" id="14" onclick="zeroToNine(2)" value="2" style="width:70px;height:70px"></td>
+<td><input type="button" name="bt7" id="15" onclick="zeroToNine(3)" value="3" style="width:70px;height:70px"></td>
+<td><input type="button" name="bt8" id="16" onclick="operator('+')" value="+" style="width:70px;height:70px"></td>
+</tr>
+</section>
+<section>
+<tr>
+<td colspan="2"><input type="button" name="bt5" id="17" onclick="a.value=0" value="0" style="width:140px;height:70px"></td>
+<td><input type="button" name="bt6" id="18" value="." onclick="a.value+='.'" style="width:70px;height:70px"></td>
+<td><input type="button" name="bt7" id="b" value="=" onclick="equals()" style="width:70px;height:70px"></td>
+</tr><br>
+</section>
+</table>
+<script src="calculator1.js"></script>
+</body>
+</html>
+
+
+
